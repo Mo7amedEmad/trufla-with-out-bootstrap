@@ -1,0 +1,28 @@
+/******** start of the grid**********/ 
+*{
+    @include prefixer(box-sizing,border-box,webkit moz o ms)
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media(min-width:$minSmall){
+        width:750px ;
+    }
+    @media(min-width:$minMedium){
+        width: 970px;
+    }
+    @media(min-width:$minLarge){
+        width: 1170px;
+    }
+}
+@include minMedium {
+    .offset-lg-1{
+        margin-left: $offset-1;
+    }
+}
+.clearfix{
+    clear: both;
+}
+/******** end of the grid**********/ 
